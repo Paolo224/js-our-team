@@ -31,10 +31,18 @@ const membri = [
     },
 ];
 
+const divElement = document.querySelector('div.col-8');
+const newDivElement = document.createElement('div');
+
+divElement.append(newDivElement);
+
+
+
+
+
 for( let i = 0; i < membri.length; i++){
     const membro = membri[i];
     for (let key in membro){
         console.log(key + ' ==> ' + membro[key]);
-        //document.getElementById('output1').innerText= key + ' ==> ' + membro[key];
-    }
+    } 
 }
