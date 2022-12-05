@@ -34,15 +34,12 @@ const membri = [
 const divElement = document.querySelector('div.col-8');
 const newDivElement = document.createElement('div');
 
-divElement.append(newDivElement);
-
-
-
-
 
 for( let i = 0; i < membri.length; i++){
     const membro = membri[i];
     for (let key in membro){
         console.log(key + ' ==> ' + membro[key]);
     } 
+    newDivElement.innerHTML += membro;
+    divElement.append(newDivElement);
 }
