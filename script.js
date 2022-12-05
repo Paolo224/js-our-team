@@ -30,3 +30,10 @@ const membri = [
         img : 'barbara-ramos-graphic-designer.jpg'
     },
 ];
+
+for( let i = 0; i < membri.length; i++){
+    const membro = membri[i];
+    for (let key in membro){
+        console.log(key + ' ==> ' + membro[key]);
+    }
+}
