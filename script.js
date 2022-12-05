@@ -31,15 +31,19 @@ const membri = [
     },
 ];
 
-const divElement = document.querySelector('div.col-8');
-const newDivElement = document.createElement('div');
+const divElement = document.querySelector('div.col-12');
+
 
 
 for( let i = 0; i < membri.length; i++){
     const membro = membri[i];
-    for (let key in membro){
+    let key;
+    for ( key in membro){
         console.log(key + ' ==> ' + membro[key]);
     } 
-    newDivElement.innerHTML += membro;
+    const newDivElement = document.createElement('div');
+    newDivElement.classList.add('collocamento_div')
+    let pictures = '<img src="./img/' + membro.img + '">';
+    newDivElement.innerHTML = membro.name + ' ==> ' + membro.role + pictures;
     divElement.append(newDivElement);
 }

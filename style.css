@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.collocamento_div{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 4) - 2rem);
+    margin: 1rem; 
+}
